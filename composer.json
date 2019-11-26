@@ -1,0 +1,23 @@
+{
+    "name": "sholihin/rajaongkirprolaravel",
+    "description": "Raja Ongkir API Laravel 5",
+    "keywords": [
+        "rajaongkir", "application programming interface", "laravel"
+    ],
+    "license": "MIT",
+    "type": "package",
+    "authors": [
+        {
+            "name": "Mohamad Sholihin",
+            "email": "mohamad.sholihin.it@gmail.com"
+        }
+    ],
+    "autoload": {
+    	"psr-4": {
+    		"sholihin\\rajaongkirprolaravel\\": "src/"
+    	}
+    },
+    "require": {
+    	"illuminate/support": "~5"
+    }
+}
