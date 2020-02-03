@@ -182,6 +182,40 @@ class ShippingController extends Controller
 }
 ```
 
+**Tambahan Database**
+
+***provinces***
+```mysql
+CREATE TABLE `provinces` (
+  `province_id` int(11) NOT NULL,
+  `province` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+
+***cities***
+```mysql
+CREATE TABLE `cities` (
+  `city_id` int(20) NOT NULL,
+  `province_id` int(50) NOT NULL,
+  `type` varchar(30) DEFAULT NULL,
+  `city_name` varchar(255) NOT NULL,
+  `postal_code` int(191) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+```
+
+***subdistricts***
+```mysql
+CREATE TABLE `subdistricts` (
+  `subdistrict_id` int(191) NOT NULL,
+  `province_id` int(191) NOT NULL,
+  `province` varchar(255) NOT NULL,
+  `city_id` int(191) NOT NULL,
+  `city` varchar(255) NOT NULL,
+  `type` varchar(255) NOT NULL,
+  `subdistrict_name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
+
 **Penggunaan**
 
 Ambil data provinsi
