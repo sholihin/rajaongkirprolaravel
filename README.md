@@ -12,7 +12,7 @@ atau
 ```
 {
 	"require": {
-		"sholihin/rajaongkirprolaravel": "^2.0",
+		"sholihin/rajaongkirprolaravel": "^2.1",
 	}
 }
 ```
